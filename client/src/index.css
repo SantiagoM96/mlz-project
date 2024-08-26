@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('./assets/fonts/Geometria.ttf') format('ttf');
+}
+
+* {
+    @apply m-0 p-0 scroll-smooth box-border font-geometria
+}
+
+html, body {
+    height: 100%;
+}
+
+.flex-center {
+    @apply flex justify-center items-center
+}
+
+.flex-between {
+    @apply flex justify-between items-center
+}
+
+.heading1, .heading2, .heading3,.heading4 {
+    @apply font-bold
+}
+
+.heading1 {
+    @apply text-[32px]
+}
+
+.heading2 {
+    @apply text-[24px]
+}
+
+.heading3 {
+    @apply text-[20px]
+}
+
+.heading4 {
+    @apply text-[18px]
+}
+
+.main__container {
+    @apply flex flex-col gap-8 mt-[110px] lg:mt-0 max-w-[1232px] h-full w-full px-4
+}
+
+.content {
+    @apply flex flex-col gap-4 w-full md:w-2/3
+}
+
+.paragraph {
+    @apply text-[#4f4f4f] text-[18px]
+}
+
+.outstanding {
+    @apply flex flex-col justify-center p-6 gap-4 bg-[#F3F7FC] rounded-lg
+}
+
+.footer {
+    @apply flex flex-col bg-[#236999] py-8
+}
